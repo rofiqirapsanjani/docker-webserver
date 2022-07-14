@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello rapsanjani');
 });
 app.get('/api/', (req, res) => {
-  res.json("kamu hebat");
+  res.json("kamu hebsaat");
 });
 
 
