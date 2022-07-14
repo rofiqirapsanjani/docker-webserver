@@ -8,10 +8,15 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+
+const sayHello = (req, res, next) => {
+  res.json("HI ");
+  next();
+}
 app.get('/', (req, res) => {
   res.send('Hello rapsanjani');
 });
-app.get('/api/', (req, res) => {
+app.get('/api/', sayHello, (req, res) => {
   res.json("rofiqirapsanjani");
 });
 
